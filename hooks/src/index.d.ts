@@ -106,7 +106,7 @@ export function useCallback<T extends Function>(callback: T, inputs: Inputs): T;
  * This optimization helps to avoid expensive calculations on every render.
  * If no array is provided, a new value will be computed whenever a new function instance is passed as the first argument.
  */
-export function useMemo<T>(factory: () => T, inputs?: Inputs): T;
+export function useMemo<T>(factory: () => T, inputs: Inputs): T;
 
 /**
  * Returns the current context value, as given by the nearest context provider for the given context.
